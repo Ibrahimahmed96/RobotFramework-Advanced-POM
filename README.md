@@ -1,15 +1,22 @@
-# Advanced Robot Framework POM Suite
+#  Advanced Robot Framework Automation Suite
 
-## Overview
-Automated End-to-End framework for E-commerce platforms using **Robot Framework** and **Python**.
+ Web Automation Framework built with **Robot Framework** and **Python**, following the **Page Object Model (POM)** design pattern.
 
-## Architecture
-- **Page Object Model (POM):** Decoupled test logic from UI locators.
-- **Custom Python Library:** Dynamic data generation for shipping details.
-- **Keyword-Driven:** Reusable components for high maintainability.
+##  Project Architecture & Structure
 
-## Tech Stack
-- Python 3.x
-- Robot Framework
-- SeleniumLibrary
-- Chrome WebDriver
+The project is structured to ensure high maintainability and scalability by separating test logic from UI locators:
+
+```text
+.
+├── Tests/                 # End-to-End Test Scenarios
+│   └── PurchaseTests.robot
+├── Resources/             # Framework Core Logic
+│   ├── PageObjects/       # UI Locators & Page-Specific Keywords
+│   │   ├── LoginPage.robot
+│   │   └── InventoryPage.robot
+│   ├── Libraries/         # Custom Python Extensions
+│   │   └── CustomLib.py
+│   └── Common.robot       # Global Setup, Teardown & Variables
+├── Results/               # Test Execution Reports & Screenshots
+├── .gitignore             # Git exclusion rules
+└── README.md              # Project Documentation
