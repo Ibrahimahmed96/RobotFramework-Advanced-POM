@@ -3,9 +3,10 @@ Library           SeleniumLibrary
 Library           ../Resources/CustomLib.py
 Resource          ../Resources/PageObjects/LoginPage.robot
 Resource          ../Resources/PageObjects/InventoryPage.robot
+Resource          ../Resources/Common.robot
 
-Test Setup        Open Browser    https://www.saucedemo.com/    chrome
-Test Teardown     Close Browser
+Test Setup        Begin Web Test
+Test Teardown     End Web Test
 
 *** Test Cases ***
 End-to-End Purchase Workflow
