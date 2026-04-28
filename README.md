@@ -6,8 +6,9 @@
 
 The project is structured to ensure high maintainability and scalability by separating test logic from UI locators:
 
-```text
-.
+text
+---------------
+
 ├── Tests/                 # End-to-End Test Scenarios
 │   └── PurchaseTests.robot
 ├── Resources/             # Framework Core Logic
